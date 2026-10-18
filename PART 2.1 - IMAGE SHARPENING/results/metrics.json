@@ -1,0 +1,309 @@
+{
+  "sigma": 1.5,
+  "selected_alpha": 1.0,
+  "amounts": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "mode": "same",
+  "boundary": "symm",
+  "color": "Independent spatial RGB convolutions on normalized encoded RGB values; no gamma linearization.",
+  "display": {
+    "high_frequency_abs_scale": 0.25,
+    "high_frequency_mapping": "0.5 + high/(2*0.25), clipped only for viewing",
+    "image_mapping": "clip to [0,1], multiply by 255, round to uint8",
+    "crop_scale": "2x nearest neighbor"
+  },
+  "clipping_unit": "fraction of scalar RGB channel samples, not fraction of pixels",
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "opencv": "4.13.0",
+    "pillow": "12.1.0"
+  },
+  "images": {
+    "taj": {
+      "input_sha256": "4c25d1a1b80c7e17b9432e8cc4ec3ea315d7a105aee695041334444160c32a5a",
+      "original_size_wh": [
+        300,
+        300
+      ],
+      "working_size_wh": [
+        300,
+        300
+      ],
+      "crop_xyxy": [
+        85,
+        15,
+        215,
+        205
+      ],
+      "gaussian_shape": [
+        11,
+        11
+      ],
+      "amounts": [
+        {
+          "alpha": 0.0,
+          "file": "taj-alpha-0.00.png",
+          "crop": "taj-alpha-0.00-crop.png",
+          "max_route_error": 0.0,
+          "kernel_sum": 1.0,
+          "below_zero_fraction": 0.0,
+          "above_one_fraction": 0.0,
+          "outside_fraction": 0.0,
+          "raw_range": [
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "file": "taj-alpha-0.50.png",
+          "crop": "taj-alpha-0.50-crop.png",
+          "max_route_error": 1.5543122344752192e-15,
+          "kernel_sum": 0.9999999999999993,
+          "below_zero_fraction": 0.04072222222222222,
+          "above_one_fraction": 0.00712962962962963,
+          "outside_fraction": 0.047851851851851854,
+          "raw_range": [
+            -0.2494477831226242,
+            1.2272128054388212
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "file": "taj-alpha-1.00.png",
+          "crop": "taj-alpha-1.00-crop.png",
+          "max_route_error": 1.5543122344752192e-15,
+          "kernel_sum": 1.0,
+          "below_zero_fraction": 0.0546,
+          "above_one_fraction": 0.021237037037037037,
+          "outside_fraction": 0.07583703703703704,
+          "raw_range": [
+            -0.5314597246526632,
+            1.4544256108776423
+          ]
+        },
+        {
+          "alpha": 2.0,
+          "file": "taj-alpha-2.00.png",
+          "crop": "taj-alpha-2.00-crop.png",
+          "max_route_error": 1.9984014443252818e-15,
+          "kernel_sum": 0.9999999999999997,
+          "below_zero_fraction": 0.07422962962962963,
+          "above_one_fraction": 0.0527,
+          "outside_fraction": 0.12692962962962964,
+          "raw_range": [
+            -1.106056704207287,
+            1.9088512217552849
+          ]
+        },
+        {
+          "alpha": 4.0,
+          "file": "taj-alpha-4.00.png",
+          "crop": "taj-alpha-4.00-crop.png",
+          "max_route_error": 3.552713678800501e-15,
+          "kernel_sum": 0.9999999999999996,
+          "below_zero_fraction": 0.10427777777777777,
+          "above_one_fraction": 0.10061851851851852,
+          "outside_fraction": 0.2048962962962963,
+          "raw_range": [
+            -2.2552506633165352,
+            2.8177024435105698
+          ]
+        }
+      ]
+    },
+    "selfie": {
+      "input_sha256": "444e064271bb61abab9e894957125e96023677c3f7c09e2c56de2883dc1d2827",
+      "original_size_wh": [
+        1279,
+        1706
+      ],
+      "working_size_wh": [
+        480,
+        640
+      ],
+      "crop_xyxy": [
+        155,
+        135,
+        345,
+        370
+      ],
+      "gaussian_shape": [
+        11,
+        11
+      ],
+      "amounts": [
+        {
+          "alpha": 0.0,
+          "file": "selfie-alpha-0.00.png",
+          "crop": "selfie-alpha-0.00-crop.png",
+          "max_route_error": 0.0,
+          "kernel_sum": 1.0,
+          "below_zero_fraction": 0.0,
+          "above_one_fraction": 0.0,
+          "outside_fraction": 0.0,
+          "raw_range": [
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "alpha": 0.5,
+          "file": "selfie-alpha-0.50.png",
+          "crop": "selfie-alpha-0.50-crop.png",
+          "max_route_error": 1.3322676295501878e-15,
+          "kernel_sum": 0.9999999999999993,
+          "below_zero_fraction": 0.004393446180555555,
+          "above_one_fraction": 0.0020703125,
+          "outside_fraction": 0.0064637586805555555,
+          "raw_range": [
+            -0.2521042684144792,
+            1.2783265356459563
+          ]
+        },
+        {
+          "alpha": 1.0,
+          "file": "selfie-alpha-1.00.png",
+          "crop": "selfie-alpha-1.00-crop.png",
+          "max_route_error": 1.7763568394002505e-15,
+          "kernel_sum": 1.0,
+          "below_zero_fraction": 0.010113932291666667,
+          "above_one_fraction": 0.006248914930555556,
+          "outside_fraction": 0.016362847222222223,
+          "raw_range": [
+            -0.5159732427113114,
+            1.5566530712919127
+          ]
+        },
+        {
+          "alpha": 2.0,
+          "file": "selfie-alpha-2.00.png",
+          "crop": "selfie-alpha-2.00-crop.png",
+          "max_route_error": 2.1094237467877974e-15,
+          "kernel_sum": 0.9999999999999997,
+          "below_zero_fraction": 0.019931640625,
+          "above_one_fraction": 0.01579644097222222,
+          "outside_fraction": 0.035728081597222225,
+          "raw_range": [
+            -1.0437111913049757,
+            2.1133061425838253
+          ]
+        },
+        {
+          "alpha": 4.0,
+          "file": "selfie-alpha-4.00.png",
+          "crop": "selfie-alpha-4.00-crop.png",
+          "max_route_error": 3.9968028886505635e-15,
+          "kernel_sum": 0.9999999999999996,
+          "below_zero_fraction": 0.032556423611111114,
+          "above_one_fraction": 0.033310546875,
+          "outside_fraction": 0.0658669704861111,
+          "raw_range": [
+            -2.107366046334108,
+            3.226612285167651
+          ]
+        }
+      ]
+    }
+  },
+  "restoration": {
+    "degradation_sigma": 2.0,
+    "sharpen_sigma": 1.5,
+    "selected_alpha": 2.0,
+    "reference": "The resized selfie is the sharp reference for artificial Gaussian degradation; not a claim of an optically perfect photograph.",
+    "degraded": {
+      "raw_mse": 0.0021265946169310417,
+      "display_mse_before_quantization": 0.0021265946169310417,
+      "display_psnr_db_before_quantization": 26.723152897912918
+    },
+    "amounts": [
+      {
+        "alpha": 0.0,
+        "file": "restore-alpha-0.00.png",
+        "crop": "restore-alpha-0.00-crop.png",
+        "max_route_error": 0.0,
+        "raw_mse": 0.0021265946169310417,
+        "display_mse_before_quantization": 0.0021265946169310417,
+        "display_psnr_db_before_quantization": 26.723152897912918,
+        "below_zero_fraction": 0.0,
+        "above_one_fraction": 0.0,
+        "outside_fraction": 0.0,
+        "raw_range": [
+          0.008547402513051354,
+          0.9603394700799646
+        ]
+      },
+      {
+        "alpha": 0.5,
+        "file": "restore-alpha-0.50.png",
+        "crop": "restore-alpha-0.50-crop.png",
+        "max_route_error": 1.2212453270876722e-15,
+        "raw_mse": 0.0019047549515461605,
+        "display_mse_before_quantization": 0.0019047549515461605,
+        "display_psnr_db_before_quantization": 27.20160888774046,
+        "below_zero_fraction": 0.0,
+        "above_one_fraction": 0.0,
+        "outside_fraction": 0.0,
+        "raw_range": [
+          0.008249251677032086,
+          0.9628743479464177
+        ]
+      },
+      {
+        "alpha": 1.0,
+        "file": "restore-alpha-1.00.png",
+        "crop": "restore-alpha-1.00-crop.png",
+        "max_route_error": 1.1102230246251565e-15,
+        "raw_mse": 0.0017169760738228788,
+        "display_mse_before_quantization": 0.0017169760738228788,
+        "display_psnr_db_before_quantization": 27.652357567197452,
+        "below_zero_fraction": 0.0,
+        "above_one_fraction": 0.0,
+        "outside_fraction": 0.0,
+        "raw_range": [
+          0.0006587516780446126,
+          0.9660167647240071
+        ]
+      },
+      {
+        "alpha": 2.0,
+        "file": "restore-alpha-2.00.png",
+        "crop": "restore-alpha-2.00-crop.png",
+        "max_route_error": 2.1094237467877974e-15,
+        "raw_mse": 0.0014436006813611161,
+        "display_mse_before_quantization": 0.0014435068570533055,
+        "display_psnr_db_before_quantization": 28.405811487605106,
+        "below_zero_fraction": 0.0002875434027777778,
+        "above_one_fraction": 0.0,
+        "outside_fraction": 0.0002875434027777778,
+        "raw_range": [
+          -0.038813551657716265,
+          0.980685587193751
+        ]
+      },
+      {
+        "alpha": 4.0,
+        "file": "restore-alpha-4.00.png",
+        "crop": "restore-alpha-4.00-crop.png",
+        "max_route_error": 4.107825191113079e-15,
+        "raw_mse": 0.0013055793483767921,
+        "display_mse_before_quantization": 0.0012948132620583452,
+        "display_psnr_db_before_quantization": 28.87792861007755,
+        "below_zero_fraction": 0.003937717013888889,
+        "above_one_fraction": 0.0003146701388888889,
+        "outside_fraction": 0.004252387152777778,
+        "raw_range": [
+          -0.15597447565332156,
+          1.117459941248471
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "sigma": 2.0,
+  "threshold": 0.04,
+  "kernel_shape": [
+    13,
+    13
+  ],
+  "dog_shapes": {
+    "x": [
+      13,
+      14
+    ],
+    "y": [
+      14,
+      13
+    ]
+  },
+  "kernel_sums": {
+    "gaussian": 1.0000000000000002,
+    "kx": -1.734723475976807e-18,
+    "ky": 0.0
+  },
+  "input_sha256": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a",
+  "size_wh": [
+    512,
+    512
+  ],
+  "boundary": "symm",
+  "mode": "same",
+  "comparison_margin": 7,
+  "route_errors": {
+    "x": {
+      "full_max_abs": 1.052001367962685e-15,
+      "interior_max_abs": 1.052001367962685e-15
+    },
+    "y": {
+      "full_max_abs": 1.0130785099704553e-15,
+      "interior_max_abs": 1.0130785099704553e-15
+    }
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.02,
+      "file": "edges-0.0200.png",
+      "edge_pixels": 33600,
+      "edge_fraction": 0.128173828125
+    },
+    {
+      "threshold": 0.04,
+      "file": "edges-0.0400.png",
+      "edge_pixels": 19148,
+      "edge_fraction": 0.0730438232421875
+    },
+    {
+      "threshold": 0.06,
+      "file": "edges-0.0600.png",
+      "edge_pixels": 10833,
+      "edge_fraction": 0.041324615478515625
+    },
+    {
+      "threshold": 0.08,
+      "file": "edges-0.0800.png",
+      "edge_pixels": 5729,
+      "edge_fraction": 0.021854400634765625
+    },
+    {
+      "threshold": 0.1,
+      "file": "edges-0.1000.png",
+      "edge_pixels": 2276,
+      "edge_fraction": 0.0086822509765625
+    }
+  ],
+  "sigma_sweep": [
+    {
+      "sigma": 1.0,
+      "kernel_size": [
+        7,
+        7
+      ],
+      "prefix": "sigma-1.00",
+      "edge_fraction": 0.10158920288085938
+    },
+    {
+      "sigma": 2.0,
+      "kernel_size": [
+        13,
+        13
+      ],
+      "prefix": "sigma-2.00",
+      "edge_fraction": 0.0730438232421875
+    },
+    {
+      "sigma": 3.0,
+      "kernel_size": [
+        19,
+        19
+      ],
+      "prefix": "sigma-3.00",
+      "edge_fraction": 0.04708099365234375
+    }
+  ],
+  "selected_edge_fraction": 0.0730438232421875,
+  "fixed_threshold_020": {
+    "raw": 0.033905029296875,
+    "smoothed": 0.0
+  },
+  "display": {
+    "derivative_abs_scale": 0.7411764705882353,
+    "magnitude_white_at": 0.25,
+    "orientation_value_white_at": 0.15
+  },
+  "orientation": {
+    "method": "24-term alternating series with range reduction; manual quadrant recovery",
+    "units": "radians",
+    "range": "[0, 2*pi)",
+    "convention": "clockwise from +x; +y is down",
+    "hsv": "H=theta/(2*pi), S=1, V=clip(magnitude/0.15,0,1)",
+    "zero_gradient": "angle=0, V=0 (black)"
+  },
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "opencv": "4.13.0",
+    "pillow": "12.1.0"
+  }
+}

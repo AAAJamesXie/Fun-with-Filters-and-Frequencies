@@ -1,0 +1,10 @@
+{
+  "landmark_coordinates": "Manually selected eye centers on EXIF-corrected images resized to width 512; x right, y down. Left eye in image first.",
+  "canvas_wh": [480, 560],
+  "favorite": "cat-owl",
+  "pairs": [
+    {"id": "derek-nutmeg", "title": "Derek + Nutmeg", "low": "derek", "high": "nutmeg", "low_points": [[210, 241], [307, 231]], "high_points": [[220, 105], [276, 135]], "target_points": [[190, 230], [290, 230]], "sigma_low": 10, "sigma_high": 4, "gain": 1.2, "mode": "low_color"},
+    {"id": "portraits", "title": "Obama + Trump", "low": "obama", "high": "trump", "low_points": [[230, 109], [281, 109]], "high_points": [[217, 231], [300, 231]], "target_points": [[180, 210], [300, 210]], "sigma_low": 14, "sigma_high": 2, "gain": 2.4, "mode": "gray"},
+    {"id": "cat-owl", "title": "Chelsea + Owl", "low": "chelsea", "high": "owl", "low_points": [[193, 126], [358, 155]], "high_points": [[190, 126], [330, 126]], "target_points": [[150, 160], [330, 160]], "sigma_low": 10, "sigma_high": 2, "gain": 1.5, "mode": "low_color"}
+  ]
+}

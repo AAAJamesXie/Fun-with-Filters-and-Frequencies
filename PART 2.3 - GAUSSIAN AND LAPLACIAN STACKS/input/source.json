@@ -1,0 +1,7 @@
+{
+  "apple": {"source": "Course-supplied Assignment 2 Part 2 images", "original_file": "syde671 assn2 part 2 images/burt_apple.png", "working_file": "apple.png", "original_size_wh": [740, 530]},
+  "orange": {"source": "Course-supplied Assignment 2 Part 2 images", "original_file": "syde671 assn2 part 2 images/burt_orange.png", "working_file": "orange.png", "original_size_wh": [740, 530]},
+  "preparation": "Original PNG bytes copied without modification. No resize, crop, registration or retouching. Decode RGB to float64 [0,1].",
+  "reference": {"authors": "Peter J. Burt and Edward H. Adelson", "title": "A Multiresolution Spline With Application to Image Mosaics", "year": 1983, "journal": "ACM Transactions on Graphics 2(4), pages 217-236", "provided_file": "syde671 assn2 part 2 images/spline83 Burt Adelson.pdf", "algorithm_page": 230},
+  "figure_reference": "Figure 3.42 (a)-(l), shown in the assignment handout: levels 0,2,4 and reconstructed contributions. This project adapts the pyramid illustration to full-resolution stacks."
+}

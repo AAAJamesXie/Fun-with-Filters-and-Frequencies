@@ -1,0 +1,91 @@
+{
+  "retrieved_on": "2026-10-17",
+  "modifications": "Images are EXIF-corrected, resized, aligned by a similarity transform, cropped to common valid support, converted between grayscale and RGB, spatially filtered, and combined into educational hybrid images. Originals are retained unchanged.",
+  "images": [
+    {
+      "file": "derek.jpg",
+      "title": "Derek",
+      "author": "Course-provided sample",
+      "license": "Course material; no additional open-license claim",
+      "page": "",
+      "download": "syde671 assignment 2 hybrid/hybrid/DerekPicture.jpg"
+    },
+    {
+      "file": "nutmeg.jpg",
+      "title": "Nutmeg",
+      "author": "Course-provided sample",
+      "license": "Course material; no additional open-license claim",
+      "page": "",
+      "download": "syde671 assignment 2 hybrid/hybrid/nutmeg.jpg"
+    },
+    {
+      "file": "obama.jpg",
+      "title": "President Barack Obama, official portrait, 2012",
+      "author": "Pete Souza / The White House",
+      "license": "Public domain (U.S. federal government work)",
+      "page": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama.jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg"
+    },
+    {
+      "file": "trump.jpg",
+      "title": "Donald Trump, official portrait, 2017",
+      "author": "Shealah Craighead / The White House",
+      "license": "Public domain (U.S. federal government work)",
+      "page": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg"
+    },
+    {
+      "file": "chelsea.png",
+      "title": "Chelsea the cat",
+      "author": "Stefan van der Walt",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "page": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.chelsea",
+      "download": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png"
+    },
+    {
+      "file": "tiger-front.jpg",
+      "title": "Tiger Face (10971343685): Sumatran tiger at Chester Zoo",
+      "author": "Steve Wilson",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:Tiger_Face_(10971343685).jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tiger_Face_%2810971343685%29.jpg",
+      "status": "Replaced by cat/owl in the formal report; retained as an unused historical candidate."
+    },
+    {
+      "file": "tiger.jpg",
+      "title": "Closeup Tiger Face Rathambore (2414511083)",
+      "author": "amanderson2",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:Closeup_Tiger_Face_Rathambore_(2414511083).jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Closeup_Tiger_Face_Rathambore_%282414511083%29.jpg",
+      "status": "Rejected alignment candidate: side-facing pose. Retained for provenance; not used in final hybrids."
+    },
+    {
+      "file": "owl.jpg",
+      "title": "Eurasian eagle-owl (44088)",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:Eurasian_eagle-owl_(44088).jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/3/31/Eurasian_eagle-owl_%2844088%29.jpg"
+    }
+  ],
+  "reference": {
+    "authors": "Aude Oliva, Antonio Torralba, Philippe G. Schyns",
+    "title": "Hybrid images",
+    "year": 2006,
+    "doi": "https://doi.org/10.1145/1141911.1141919",
+    "paper": "https://stanford.edu/class/ee367/reading/OlivaTorralb_Hybrid_Siggraph06.pdf",
+    "implementation_notes": "Gaussian low/high bands, half-amplitude cutoff convention, perceptual grouping/alignment, and color cues. Spatial finite kernels approximate the paper's frequency-domain Gaussians."
+  },
+  "derived_image_licenses": {
+    "cat-owl": {
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Rhododendrites (owl) and Stefan van der Walt (Chelsea); resized, aligned, cropped, filtered and combined."
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "inputs": {
+    "apple": {
+      "sha256": "39100fc3a96b5bbb534e3fab37406dc673b7cea88c8f3aba3be569ff5201fba4",
+      "size_wh": [
+        740,
+        530
+      ]
+    },
+    "orange": {
+      "sha256": "69031aa9b6b11b3873f0f6da9ad8f0246f0bc4c4b4b71a82ad743674d6e2ea54",
+      "size_wh": [
+        740,
+        530
+      ]
+    }
+  },
+  "image_sigmas": [
+    0.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ],
+  "mask_sigmas": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0,
+    32.0
+  ],
+  "incremental_sigmas": [
+    0.0,
+    2.0,
+    3.4641016151377544,
+    6.928203230275509,
+    13.856406460551018,
+    27.712812921102035
+  ],
+  "mask_incremental_sigmas": [
+    1.0,
+    1.7320508075688772,
+    3.4641016151377544,
+    6.928203230275509,
+    13.856406460551018,
+    27.712812921102035
+  ],
+  "levels": 6,
+  "gaussian_shape": [
+    6,
+    530,
+    740,
+    3
+  ],
+  "laplacian_shape": [
+    6,
+    530,
+    740,
+    3
+  ],
+  "mask_shape": [
+    6,
+    530,
+    740
+  ],
+  "downsampling": false,
+  "boundary": "reflect (half-sample symmetric)",
+  "gaussian_radius": "ceil(4*incremental_sigma)",
+  "last_laplacian_level": "coarse Gaussian residual, essential for reconstruction",
+  "split_column": 370,
+  "mask_fine_sigma": 1.0,
+  "single_feather_sigma": 16.0,
+  "errors": {
+    "apple": 2.220446049250313e-16,
+    "orange": 2.220446049250313e-16,
+    "oraple_reconstruction": 2.220446049250313e-16,
+    "left_plus_right": 2.220446049250313e-16,
+    "mask_complement": 0.0
+  },
+  "band_display_scales": [
+    0.5481723010504442,
+    0.2489746451426753,
+    0.2737113594693917,
+    0.28626683674058223,
+    0.23341280580809648,
+    0.9852011023248186
+  ],
+  "figure_panels": [
+    {
+      "letter": "a",
+      "file": "figure-a.png",
+      "level": 0,
+      "column": "left",
+      "signed_abs_scale": 0.5446693674074462
+    },
+    {
+      "letter": "b",
+      "file": "figure-b.png",
+      "level": 0,
+      "column": "right",
+      "signed_abs_scale": 0.5446693674074462
+    },
+    {
+      "letter": "c",
+      "file": "figure-c.png",
+      "level": 0,
+      "column": "combined",
+      "signed_abs_scale": 0.5446693674074462
+    },
+    {
+      "letter": "d",
+      "file": "figure-d.png",
+      "level": 2,
+      "column": "left",
+      "signed_abs_scale": 0.2737113594693917
+    },
+    {
+      "letter": "e",
+      "file": "figure-e.png",
+      "level": 2,
+      "column": "right",
+      "signed_abs_scale": 0.2737113594693917
+    },
+    {
+      "letter": "f",
+      "file": "figure-f.png",
+      "level": 2,
+      "column": "combined",
+      "signed_abs_scale": 0.2737113594693917
+    },
+    {
+      "letter": "g",
+      "file": "figure-g.png",
+      "level": 4,
+      "column": "left",
+      "signed_abs_scale": 0.23341280580809648
+    },
+    {
+      "letter": "h",
+      "file": "figure-h.png",
+      "level": 4,
+      "column": "right",
+      "signed_abs_scale": 0.23341280580809648
+    },
+    {
+      "letter": "i",
+      "file": "figure-i.png",
+      "level": 4,
+      "column": "combined",
+      "signed_abs_scale": 0.23341280580809648
+    },
+    {
+      "letter": "j",
+      "file": "figure-j.png",
+      "level": "sum of all six levels",
+      "column": "left",
+      "display": "ordinary RGB [0,1]"
+    },
+    {
+      "letter": "k",
+      "file": "figure-k.png",
+      "level": "sum of all six levels",
+      "column": "right",
+      "display": "ordinary RGB [0,1]"
+    },
+    {
+      "letter": "l",
+      "file": "figure-l.png",
+      "level": "sum of all six levels",
+      "column": "image",
+      "display": "ordinary RGB [0,1]"
+    }
+  ],
+  "figure_selected_levels": [
+    0,
+    2,
+    4
+  ],
+  "raw_result_range": [
+    -0.0680599859149783,
+    1.000000000000868
+  ],
+  "display_clip_fraction": 0.03170746217916029,
+  "display": "Signed bands: 0.5 + band/(2*scale). Same scale within each figure row and each displayed stack level. Ordinary photographs/coarse residual: clip [0,1], round to uint8. No clipping in reconstruction.",
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "opencv": "4.13.0",
+    "pillow": "12.1.0"
+  }
+}

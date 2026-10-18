@@ -1,0 +1,20 @@
+{
+  "owl": {
+    "title": "Eurasian eagle-owl (44088)",
+    "author": "Rhododendrites",
+    "page": "https://commons.wikimedia.org/wiki/File:Eurasian_eagle-owl_(44088).jpg",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/3/31/Eurasian_eagle-owl_%2844088%29.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "cat": {
+    "title": "Chelsea the cat",
+    "author": "Stefan van der Walt",
+    "page": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.chelsea",
+    "license": "CC0",
+    "local_input": "../../input/chelsea.png"
+  },
+  "derived_image_license": "CC BY-SA 4.0 for all cat/owl hybrid previews in this experiment; credit Rhododendrites and Stefan van der Walt, with source and license links above.",
+  "modifications": "Proportional resizing, eye-landmark similarity alignment, cropping, grayscale conversion, Gaussian filtering and image combination; smaller views use antialiased downsampling.",
+  "formal_report": "This standalone experiment does not replace any existing formal Part 2.2 case."
+}

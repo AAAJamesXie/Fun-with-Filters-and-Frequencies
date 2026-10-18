@@ -1,0 +1,31 @@
+.project-hero h1{font-size:clamp(32px,6vw,88px);overflow-wrap:anywhere}
+section{padding:36px 0;border-bottom:2px solid var(--ink)}
+section.project-hero{border-bottom:0;padding-bottom:20px}
+section.hero-result{padding:0 0 36px}
+.hero-result figure{max-width:950px;margin:0 auto}
+h2{font-size:clamp(30px,4vw,56px);line-height:1.05;margin-bottom:24px}
+h3{font-size:clamp(24px,3vw,40px);margin:20px 0}
+h4{font-size:21px;margin:28px 0 14px}
+p,li{font-size:16px;line-height:1.65;max-width:1050px}
+a.text-link,li a,section>p a,td a{text-decoration:underline;text-underline-offset:3px}
+.case{padding:32px 0 40px;border-top:5px solid var(--ink)}
+.two-grid,.three-grid,.four-grid,.six-grid,.figure-grid{display:grid;gap:20px;margin:24px 0}
+.two-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.three-grid,.figure-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.four-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.six-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+figure{margin:0;min-width:0}
+figure img{width:100%;height:auto}
+.originals img{height:380px;object-fit:contain;background:var(--paper-deep)}
+figcaption{font-size:12px;line-height:1.5;margin:10px 0 20px;overflow-wrap:anywhere}
+.mask-preview{max-width:340px;margin:24px 0}
+.observation{border-left:5px solid var(--ink);padding-left:18px}
+details{border:1px solid var(--line);padding:18px;margin-top:20px}
+summary{font-weight:700;cursor:pointer}
+pre{overflow:auto;max-width:100%;padding:20px;background:#ded9d6;line-height:1.6;font-size:13px}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:25px 0;table-layout:fixed}
+th,td{text-align:left;padding:12px 8px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+th{border-top:3px solid var(--ink)}
+li{margin:12px 0;overflow-wrap:anywhere}
+@media(max-width:1000px){.six-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.four-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.shell{width:calc(100% - 28px)}.site-header{flex-direction:column;gap:20px}.brand{font-size:28px}.header-nav{width:100%}.two-grid,.three-grid{grid-template-columns:1fr}.four-grid{gap:12px}.six-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.figure-grid{gap:8px}.figure-grid figcaption{font-size:10px}.originals img{height:300px}table{font-size:11px}th,td{padding:8px 3px}pre{font-size:11px}section{padding:28px 0}}

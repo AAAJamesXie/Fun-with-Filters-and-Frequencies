@@ -1,0 +1,11 @@
+{
+  "title": "Gray-level camera image",
+  "provider": "scikit-image",
+  "photographer": "Lav Varshney",
+  "license": "CC0, according to the official skimage.data.camera documentation",
+  "image_url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/camera.png",
+  "documentation_url": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.camera",
+  "original_requested_page": "https://www.researchgate.net/figure/The-cameraman-picture-with-256-256-size_fig3_329563816",
+  "source_decision": "ResearchGate image download returned Access restricted. User approved an official alternative. The scikit-image 512x512 replacement image differs from the legacy 256x256 cameraman figure.",
+  "downloaded_on": "2026-10-15"
+}

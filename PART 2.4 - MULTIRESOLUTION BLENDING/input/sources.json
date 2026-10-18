@@ -1,0 +1,71 @@
+{
+  "images": [
+    {
+      "file": "chelsea.png",
+      "title": "Chelsea the cat",
+      "author": "Stefan van der Walt",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "page": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.chelsea",
+      "download": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
+      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\chelsea.png"
+    },
+    {
+      "file": "obama.jpg",
+      "title": "President Barack Obama, official portrait, 2012",
+      "author": "Pete Souza / The White House",
+      "license": "Public domain (U.S. federal government work)",
+      "page": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama.jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+      "sha256": "744dd848fbb0584229169e01c4944664957c62495fb9e8af514a088ebca43e19",
+      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\obama.jpg"
+    },
+    {
+      "file": "owl.jpg",
+      "title": "Eurasian eagle-owl (44088)",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:Eurasian_eagle-owl_(44088).jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/3/31/Eurasian_eagle-owl_%2844088%29.jpg",
+      "sha256": "e4f9d06e854632899755bf3e3dfe562c089ef152989cd54337ef60ed368b4285",
+      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\owl.jpg"
+    },
+    {
+      "file": "selfie.jpg",
+      "title": "User-provided selfie",
+      "author": "James Xie",
+      "license": "Personal photograph; no open-license grant",
+      "sha256": "444e064271bb61abab9e894957125e96023677c3f7c09e2c56de2883dc1d2827",
+      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 1.1 - CONVOLUTIONS FROM SCRATCH!\\input\\selfie.jpg"
+    },
+    {
+      "file": "tiger-front.jpg",
+      "title": "Tiger Face (10971343685): Sumatran tiger at Chester Zoo",
+      "author": "Steve Wilson",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "page": "https://commons.wikimedia.org/wiki/File:Tiger_Face_(10971343685).jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tiger_Face_%2810971343685%29.jpg",
+      "sha256": "7c2d28d06c33bfc7926e9f138f45d29141994643841bfc75ab431a0b0d7d7532",
+      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\tiger-front.jpg"
+    },
+    {
+      "file": "trump.jpg",
+      "title": "Donald Trump, official portrait, 2017",
+      "author": "Shealah Craighead / The White House",
+      "license": "Public domain (U.S. federal government work)",
+      "page": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
+      "sha256": "dac8cb8479f133d91d768777f2a64adec68d19ea29c4994108f2aea5811ff5f2",
+      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\trump.jpg"
+    }
+  ],
+  "modifications": "EXIF correction, width-512 preparation, eye-based similarity alignment, common-valid crop, polygon masking and spatial-frequency blending. No generated imagery.",
+  "derived_licenses": {
+    "cat-owl": "CC BY-SA 4.0; Rhododendrites and Stefan van der Walt; adapted",
+    "selfie-tiger": "Adapted from Steve Wilson tiger (CC BY 2.0) and James Xie personal selfie; no blanket open-license claim for the selfie.",
+    "portraits": "Public-domain source photographs; educational composite, not a real portrait."
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "input": "cameraman.png",
+  "sha256": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a",
+  "size_wh": [
+    512,
+    512
+  ],
+  "input_range": [
+    0.0,
+    1.0
+  ],
+  "dtype": "float64",
+  "kernels": {
+    "dx": [
+      [
+        1.0,
+        -1.0
+      ]
+    ],
+    "dy": [
+      [
+        1.0
+      ],
+      [
+        -1.0
+      ]
+    ]
+  },
+  "mode": "same",
+  "boundary": "symm",
+  "smoothing": false,
+  "magnitude_formula": "sqrt(dx**2 + dy**2)",
+  "selected_threshold": 0.2,
+  "threshold_rule": "raw_magnitude > threshold",
+  "threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "file": "edges-0.0500.png",
+      "edge_pixels": 68846,
+      "edge_fraction": 0.26262664794921875
+    },
+    {
+      "threshold": 0.1,
+      "file": "edges-0.1000.png",
+      "edge_pixels": 33426,
+      "edge_fraction": 0.12751007080078125
+    },
+    {
+      "threshold": 0.15,
+      "file": "edges-0.1500.png",
+      "edge_pixels": 16641,
+      "edge_fraction": 0.06348037719726562
+    },
+    {
+      "threshold": 0.2,
+      "file": "edges-0.2000.png",
+      "edge_pixels": 8888,
+      "edge_fraction": 0.033905029296875
+    },
+    {
+      "threshold": 0.25,
+      "file": "edges-0.2500.png",
+      "edge_pixels": 5130,
+      "edge_fraction": 0.01956939697265625
+    },
+    {
+      "threshold": 0.3,
+      "file": "edges-0.3000.png",
+      "edge_pixels": 3266,
+      "edge_fraction": 0.01245880126953125
+    }
+  ],
+  "magnitude_range": [
+    0.0,
+    0.8196922744765877
+  ],
+  "display": {
+    "signed_scale": 0.7411764705882353,
+    "zero": 0.5,
+    "magnitude_mapping": "clip(raw_magnitude, 0, 1); thresholding uses unclipped raw values"
+  },
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "pillow": "12.1.0"
+  }
+}

@@ -1,0 +1,23 @@
+section { padding-bottom: 42px; }
+section + section { padding-top: 30px; border-top: 3px solid var(--ink); }
+h2 { font-size: clamp(26px, 3vw, 42px); margin-bottom: 24px; }
+h3 { font-size: 24px; margin-top: 30px; }
+p { line-height: 1.7; max-width: 1050px; }
+.project-hero h1 { font-size: clamp(38px, 6vw, 84px); overflow-wrap: anywhere; }
+.four-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.triple { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+figure { margin: 0 0 24px; min-width: 0; }
+figure img { width: 100%; height: auto; }
+figcaption { font-size: 13px; font-weight: 700; padding-top: 10px; line-height: 1.5; }
+figcaption span { display: block; color: var(--muted); font-size: 12px; font-weight: 400; }
+pre { background: var(--dark); color: var(--light); padding: 24px; overflow-x: auto; font-size: 13px; line-height: 1.65; }
+.formula { padding: 20px; background: var(--paper-deep); font-weight: 700; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 22px; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid var(--line); font-size: 14px; }
+thead { background: var(--dark); color: var(--light); }
+p a { text-decoration: underline; text-underline-offset: 3px; }
+.versions { font-size: 12px; color: var(--muted); }
+summary { cursor: pointer; font-weight: 700; padding: 18px 0; }
+@media (max-width: 800px) { .four-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .triple { grid-template-columns: 1fr; } figure { max-width: 512px; } }
+@media (max-width: 550px) { .shell { width: calc(100% - 28px); } .site-header { flex-direction: column; } .header-nav { width: 100%; } pre { padding: 14px; font-size: 12px; } th, td { padding: 7px; font-size: 11px; overflow-wrap: anywhere; } }
+@media print { pre { white-space: pre-wrap; overflow-wrap: anywhere; } figure { break-inside: avoid; } }

@@ -1,0 +1,412 @@
+{
+  "canvas_wh": [
+    480,
+    560
+  ],
+  "favorite": "cat-owl",
+  "alignment": "Manual eye landmarks; two-point similarity transform, bilinear warping; largest all-valid shared rectangle.",
+  "filters": "Separable normalized Gaussian, radius ceil(4*sigma), symmetric boundary extension; sigma in aligned cropped pixels.",
+  "formula": "hybrid = Gaussian(low,sigma_low) + gain*(high-Gaussian(high,sigma_high))",
+  "display": {
+    "photo": "clip raw hybrid to [0,1] then round to uint8",
+    "signed_high_abs_scale": 0.3,
+    "spectrum": "natural log(max(abs(fftshift(fft2(gray))),1e-8)); shared 1st/99.8th percentile display range per case",
+    "small_views": "Lanczos downsampling of the same clipped hybrid; a viewing-scale aid, not a calibrated optical distance"
+  },
+  "color": "Encoded RGB with fixed 0.2126/0.7152/0.0722 grayscale weights; no gamma linearization.",
+  "versions": {
+    "python": "3.14.3",
+    "numpy": "2.4.2",
+    "scipy": "1.17.0",
+    "opencv": "4.13.0",
+    "pillow": "12.1.0"
+  },
+  "cases": [
+    {
+      "id": "derek-nutmeg",
+      "title": "Derek + Nutmeg",
+      "low": "derek",
+      "high": "nutmeg",
+      "low_points": [
+        [
+          210,
+          241
+        ],
+        [
+          307,
+          231
+        ]
+      ],
+      "high_points": [
+        [
+          220,
+          105
+        ],
+        [
+          276,
+          135
+        ]
+      ],
+      "target_points": [
+        [
+          190,
+          230
+        ],
+        [
+          290,
+          230
+        ]
+      ],
+      "sigma_low": 10,
+      "sigma_high": 4,
+      "gain": 1.2,
+      "mode": "low_color",
+      "low_source": {
+        "filename": "derek.jpg",
+        "original_size_wh": [
+          732,
+          1024
+        ],
+        "prepared_size_wh": [
+          512,
+          716
+        ],
+        "sha256": "8c3622e450b104cd7c292a6fbc048d12aa96cacc8a645cd87994bd37419077f6"
+      },
+      "high_source": {
+        "filename": "nutmeg.jpg",
+        "original_size_wh": [
+          1408,
+          1056
+        ],
+        "prepared_size_wh": [
+          512,
+          384
+        ],
+        "sha256": "0ab7d1bef5d9bd03eb6d3ac2ae2b827272e6cb96e3e461214bc9d25c26ac91d9"
+      },
+      "crop_xyxy": [
+        1,
+        144,
+        467,
+        560
+      ],
+      "size_wh": [
+        466,
+        416
+      ],
+      "landmark_max_abs_error": [
+        0.0,
+        0.0
+      ],
+      "cutoff_half_gain_cpp": {
+        "low": 0.01873906251292776,
+        "high": 0.0468476562823194
+      },
+      "cutoff_half_gain_cycles_per_width": {
+        "low": 8.732403131024336,
+        "high": 21.83100782756084
+      },
+      "spectrum_display_range": [
+        -5.107397189278984,
+        5.64012656887068
+      ],
+      "trials": [
+        {
+          "sigma_low": 4.0,
+          "sigma_high": 2.0,
+          "file": "trial-0.png"
+        },
+        {
+          "sigma_low": 7.0,
+          "sigma_high": 2.0,
+          "file": "trial-1.png"
+        },
+        {
+          "sigma_low": 7.0,
+          "sigma_high": 4.0,
+          "file": "trial-2.png"
+        },
+        {
+          "sigma_low": 10.0,
+          "sigma_high": 2.0,
+          "file": "trial-3.png"
+        },
+        {
+          "sigma_low": 10.0,
+          "sigma_high": 4.0,
+          "file": "trial-4.png"
+        },
+        {
+          "sigma_low": 14.0,
+          "sigma_high": 3.0,
+          "file": "trial-5.png"
+        }
+      ],
+      "raw_hybrid_range": [
+        -0.11530493360320554,
+        1.2466569089144708
+      ],
+      "outside_channel_fraction": 0.01007792725872125
+    },
+    {
+      "id": "portraits",
+      "title": "Obama + Trump",
+      "low": "obama",
+      "high": "trump",
+      "low_points": [
+        [
+          230,
+          109
+        ],
+        [
+          281,
+          109
+        ]
+      ],
+      "high_points": [
+        [
+          217,
+          231
+        ],
+        [
+          300,
+          231
+        ]
+      ],
+      "target_points": [
+        [
+          180,
+          210
+        ],
+        [
+          300,
+          210
+        ]
+      ],
+      "sigma_low": 14,
+      "sigma_high": 2,
+      "gain": 2.4,
+      "mode": "gray",
+      "low_source": {
+        "filename": "obama.jpg",
+        "original_size_wh": [
+          2687,
+          3356
+        ],
+        "prepared_size_wh": [
+          512,
+          639
+        ],
+        "sha256": "744dd848fbb0584229169e01c4944664957c62495fb9e8af514a088ebca43e19"
+      },
+      "high_source": {
+        "filename": "trump.jpg",
+        "original_size_wh": [
+          2250,
+          2850
+        ],
+        "prepared_size_wh": [
+          512,
+          649
+        ],
+        "sha256": "dac8cb8479f133d91d768777f2a64adec68d19ea29c4994108f2aea5811ff5f2"
+      },
+      "crop_xyxy": [
+        0,
+        0,
+        480,
+        560
+      ],
+      "size_wh": [
+        480,
+        560
+      ],
+      "landmark_max_abs_error": [
+        0.0,
+        0.0
+      ],
+      "cutoff_half_gain_cpp": {
+        "low": 0.013385044652091256,
+        "high": 0.0936953125646388
+      },
+      "cutoff_half_gain_cycles_per_width": {
+        "low": 6.424821433003803,
+        "high": 44.973750031026626
+      },
+      "spectrum_display_range": [
+        -2.953656964461378,
+        5.973293589579219
+      ],
+      "trials": [
+        {
+          "sigma_low": 4.0,
+          "sigma_high": 2.0,
+          "file": "trial-0.png"
+        },
+        {
+          "sigma_low": 7.0,
+          "sigma_high": 2.0,
+          "file": "trial-1.png"
+        },
+        {
+          "sigma_low": 7.0,
+          "sigma_high": 4.0,
+          "file": "trial-2.png"
+        },
+        {
+          "sigma_low": 10.0,
+          "sigma_high": 2.0,
+          "file": "trial-3.png"
+        },
+        {
+          "sigma_low": 10.0,
+          "sigma_high": 4.0,
+          "file": "trial-4.png"
+        },
+        {
+          "sigma_low": 14.0,
+          "sigma_high": 3.0,
+          "file": "trial-5.png"
+        },
+        {
+          "sigma_low": 14.0,
+          "sigma_high": 2.0,
+          "file": "trial-6.png"
+        }
+      ],
+      "raw_hybrid_range": [
+        -0.750883914257734,
+        1.5774707161396968
+      ],
+      "outside_channel_fraction": 0.004244791666666667
+    },
+    {
+      "id": "cat-owl",
+      "title": "Chelsea + Owl",
+      "low": "chelsea",
+      "high": "owl",
+      "low_points": [
+        [
+          193,
+          126
+        ],
+        [
+          358,
+          155
+        ]
+      ],
+      "high_points": [
+        [
+          190,
+          126
+        ],
+        [
+          330,
+          126
+        ]
+      ],
+      "target_points": [
+        [
+          150,
+          160
+        ],
+        [
+          330,
+          160
+        ]
+      ],
+      "sigma_low": 10,
+      "sigma_high": 2,
+      "gain": 1.5,
+      "mode": "low_color",
+      "low_source": {
+        "filename": "chelsea.png",
+        "original_size_wh": [
+          451,
+          300
+        ],
+        "prepared_size_wh": [
+          512,
+          341
+        ],
+        "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb"
+      },
+      "high_source": {
+        "filename": "owl.jpg",
+        "original_size_wh": [
+          4408,
+          3109
+        ],
+        "prepared_size_wh": [
+          512,
+          361
+        ],
+        "sha256": "e4f9d06e854632899755bf3e3dfe562c089ef152989cd54337ef60ed368b4285"
+      },
+      "crop_xyxy": [
+        0,
+        49,
+        477,
+        337
+      ],
+      "size_wh": [
+        477,
+        288
+      ],
+      "landmark_max_abs_error": [
+        5.684341886080802e-14,
+        0.0
+      ],
+      "cutoff_half_gain_cpp": {
+        "low": 0.01873906251292776,
+        "high": 0.0936953125646388
+      },
+      "cutoff_half_gain_cycles_per_width": {
+        "low": 8.938532818666541,
+        "high": 44.69266409333271
+      },
+      "spectrum_display_range": [
+        -3.209221758333468,
+        5.61437264723648
+      ],
+      "trials": [
+        {
+          "sigma_low": 4.0,
+          "sigma_high": 2.0,
+          "file": "trial-0.png"
+        },
+        {
+          "sigma_low": 7.0,
+          "sigma_high": 2.0,
+          "file": "trial-1.png"
+        },
+        {
+          "sigma_low": 7.0,
+          "sigma_high": 4.0,
+          "file": "trial-2.png"
+        },
+        {
+          "sigma_low": 10.0,
+          "sigma_high": 2.0,
+          "file": "trial-3.png"
+        },
+        {
+          "sigma_low": 10.0,
+          "sigma_high": 4.0,
+          "file": "trial-4.png"
+        },
+        {
+          "sigma_low": 14.0,
+          "sigma_high": 3.0,
+          "file": "trial-5.png"
+        }
+      ],
+      "raw_hybrid_range": [
+        -0.2273392877584458,
+        1.1112239949813776
+      ],
+      "outside_channel_fraction": 0.0016499728239770168
+    }
+  ]
+}
