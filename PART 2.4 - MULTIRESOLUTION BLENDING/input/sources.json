@@ -1,71 +1,112 @@
 {
   "images": [
     {
-      "file": "chelsea.png",
-      "title": "Chelsea the cat",
-      "author": "Stefan van der Walt",
+      "id": "orange",
+      "title": "Orange Fruit Close-up.jpg",
+      "author": "freestock.ca",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "file": "orange.jpg",
+      "size_wh": [
+        1800,
+        1200
+      ],
+      "mode": "RGB",
+      "sha256": "1118eb72db758e1d4d40037d0359aa8f417f2c920330ac8c66a71065eceaab36",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Orange_Fruit_Close-up.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Orange_Fruit_Close-up.jpg"
+    },
+    {
+      "id": "basketball",
+      "title": "Isolated basketball.png",
+      "author": "MrX",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Photography by User: MrX",
+      "download_override": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Isolated_basketball.png/500px-Isolated_basketball.png",
+      "source_version": "Official 500px thumbnail, retained without further changes; full original is 1761x1760.",
+      "file": "basketball.png",
+      "size_wh": [
+        500,
+        500
+      ],
+      "mode": "RGBA",
+      "sha256": "d42c56db3b6bd0106b0449f29762134b81f0aa18cb9f04542842c6c87fee5e59",
+      "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Isolated_basketball.png/500px-Isolated_basketball.png",
+      "page": "https://commons.wikimedia.org/wiki/File:Isolated_basketball.png"
+    },
+    {
+      "id": "kiwi",
+      "title": "Kiwi aka.jpg",
+      "file_override": "kiwi-whole.jpg",
+      "author": "André Karwath aka Aka",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "selection_note": "Kiwi-cut.jpg is a rejected macro candidate, not the input for this blend.",
+      "file": "kiwi-whole.jpg",
+      "size_wh": [
+        1000,
+        746
+      ],
+      "mode": "RGB",
+      "sha256": "7cb2d919c1ed5496ff8e8b39d27fd77d9906a1cab9564247a93841a41d7656a5",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Kiwi_aka.jpg"
+    },
+    {
+      "id": "lime",
+      "title": "Lime-Whole-Split.jpg",
+      "author": "Evan-Amos",
       "license": "CC0",
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "page": "https://scikit-image.org/docs/stable/api/skimage.data.html#skimage.data.chelsea",
-      "download": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
-      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
-      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\chelsea.png"
+      "file": "lime.jpg",
+      "size_wh": [
+        3080,
+        1480
+      ],
+      "mode": "RGB",
+      "sha256": "486bf08854eb29fe345c6558cc5c2c2e3b3d369e0a1d2de1fbe390cfe1d6175c",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/6/68/Lime-Whole-Split.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Lime-Whole-Split.jpg"
     },
     {
-      "file": "obama.jpg",
-      "title": "President Barack Obama, official portrait, 2012",
-      "author": "Pete Souza / The White House",
-      "license": "Public domain (U.S. federal government work)",
-      "page": "https://commons.wikimedia.org/wiki/File:President_Barack_Obama.jpg",
-      "download": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
-      "sha256": "744dd848fbb0584229169e01c4944664957c62495fb9e8af514a088ebca43e19",
-      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\obama.jpg"
+      "id": "mars",
+      "title": "Mars Valles Marineris.jpeg",
+      "file": "mars.jpeg",
+      "author": "NASA / USGS; Viking 1 Orbiter photographic mosaic",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "description": "Global mosaic of 102 Viking 1 images captured 22 February 1980; actual spacecraft imagery, not an AI-generated planet.",
+      "size_wh": [
+        1552,
+        1552
+      ],
+      "mode": "RGB",
+      "page": "https://commons.wikimedia.org/wiki/File:Mars_Valles_Marineris.jpeg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/5/56/Mars_Valles_Marineris.jpeg",
+      "sha256": "c2e847edb2bd138e6d14f030af14b7395eba7aca857bf17a4b4b8123f43286ec"
     },
     {
-      "file": "owl.jpg",
-      "title": "Eurasian eagle-owl (44088)",
-      "author": "Rhododendrites",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "page": "https://commons.wikimedia.org/wiki/File:Eurasian_eagle-owl_(44088).jpg",
-      "download": "https://upload.wikimedia.org/wikipedia/commons/3/31/Eurasian_eagle-owl_%2844088%29.jpg",
-      "sha256": "e4f9d06e854632899755bf3e3dfe562c089ef152989cd54337ef60ed368b4285",
-      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\owl.jpg"
-    },
-    {
-      "file": "selfie.jpg",
-      "title": "User-provided selfie",
-      "author": "James Xie",
-      "license": "Personal photograph; no open-license grant",
-      "sha256": "444e064271bb61abab9e894957125e96023677c3f7c09e2c56de2883dc1d2827",
-      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 1.1 - CONVOLUTIONS FROM SCRATCH!\\input\\selfie.jpg"
-    },
-    {
-      "file": "tiger-front.jpg",
-      "title": "Tiger Face (10971343685): Sumatran tiger at Chester Zoo",
-      "author": "Steve Wilson",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "page": "https://commons.wikimedia.org/wiki/File:Tiger_Face_(10971343685).jpg",
-      "download": "https://upload.wikimedia.org/wikipedia/commons/1/10/Tiger_Face_%2810971343685%29.jpg",
-      "sha256": "7c2d28d06c33bfc7926e9f138f45d29141994643841bfc75ab431a0b0d7d7532",
-      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\tiger-front.jpg"
-    },
-    {
-      "file": "trump.jpg",
-      "title": "Donald Trump, official portrait, 2017",
-      "author": "Shealah Craighead / The White House",
-      "license": "Public domain (U.S. federal government work)",
-      "page": "https://commons.wikimedia.org/wiki/File:Donald_Trump_official_portrait.jpg",
-      "download": "https://upload.wikimedia.org/wikipedia/commons/5/56/Donald_Trump_official_portrait.jpg",
-      "sha256": "dac8cb8479f133d91d768777f2a64adec68d19ea29c4994108f2aea5811ff5f2",
-      "original_path": "S:\\University of Waterloo\\System Design Engineering\\SYDE 671\\Fun with Filters and Frequencies!\\PART 2.2 - HYBRID IMAGES\\input\\trump.jpg"
+      "id": "cookie",
+      "title": "Chocolate chip cookie.jpg",
+      "file": "cookie.jpg",
+      "author": "Renee Comet / National Cancer Institute",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "size_wh": [
+        2700,
+        1800
+      ],
+      "mode": "RGB",
+      "page": "https://commons.wikimedia.org/wiki/File:Chocolate_chip_cookie.jpg",
+      "download": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Chocolate_chip_cookie.jpg",
+      "sha256": "8cb875b937dd642930fb421e5ad7a0e4e518144aa865293d7d7de35643bb1871"
     }
   ],
-  "modifications": "EXIF correction, width-512 preparation, eye-based similarity alignment, common-valid crop, polygon masking and spatial-frequency blending. No generated imagery.",
+  "modifications": "Foreground/background preparation, uniform or three-point affine alignment, masks and full-resolution spatial-frequency blending. Basketball has an explicitly labeled Lab chroma-matched variant. Downloaded source bytes are unchanged; the basketball input is the official 500px thumbnail. Mars is a Viking photographic mosaic, not AI imagery.",
   "derived_licenses": {
-    "cat-owl": "CC BY-SA 4.0; Rhododendrites and Stefan van der Walt; adapted",
-    "selfie-tiger": "Adapted from Steve Wilson tiger (CC BY 2.0) and James Xie personal selfie; no blanket open-license claim for the selfie.",
-    "portraits": "Public-domain source photographs; educational composite, not a real portrait."
+    "mars-cookie": "Public-domain source images; NASA/USGS and Renee Comet / NCI credited.",
+    "orange-basketball": "CC BY-SA 3.0; freestock.ca and Photography by User: MrX; adapted.",
+    "kiwi-lime": "CC BY-SA 2.5; André Karwath aka Aka and Evan-Amos; adapted."
   }
 }

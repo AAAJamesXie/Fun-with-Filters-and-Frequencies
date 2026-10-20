@@ -33,7 +33,7 @@ For a smaller website/code-only checkout, set `GIT_LFS_SKIP_SMUDGE=1` during clo
 
 ## Reproduce
 
-Python experiments use NumPy, SciPy, OpenCV and Pillow. Each part includes a README, implementation, experiment generator, report generator, and targeted unit tests. Run commands from the corresponding part's directory. Keep the sibling part directories together: Part 2.4 reuses the Part 2.3 stack implementation and Part 2.2 alignment code. Browser verification scripts were run using Playwright and Microsoft Edge on Windows; their executable/runtime paths may need adjustment on another machine.
+Python experiments use NumPy, SciPy, OpenCV and Pillow. Each part includes a README, implementation, experiment generator, report generator, and targeted unit tests. Run commands from the corresponding part's directory. Keep the sibling part directories together: Part 2.4 reuses the Part 2.3 stack implementation with separate object preparation for the three Part 2.4 composites. Browser verification scripts were run using Playwright and Microsoft Edge on Windows; their executable/runtime paths may need adjustment on another machine.
 
 Original inputs are preserved. Source JSON records include original acquisition paths for provenance; those historical absolute paths are not required to view the reports or run the main experiment generators. IDE settings and Python caches are excluded.
 

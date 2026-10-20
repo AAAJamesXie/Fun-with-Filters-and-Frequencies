@@ -13,7 +13,7 @@ const { pathToFileURL } = require('node:url');
     await page.goto(pathToFileURL(path.join(__dirname,'index.html')).href);
     await page.locator('img').evaluateAll(images=>Promise.all(images.map(im=>{im.loading='eager';return im.decode();})));
     const count = await page.locator('img').count();
-    if(count!==61) throw new Error(`Expected 61 images, got ${count}`);
+    if(count!==64) throw new Error(`Expected 64 images, got ${count}`);
     if(await page.locator('.case').count()!==3) throw new Error('Three cases required');
     if(await page.locator('.color-study img').count()!==12) throw new Error('Four color modes per case required');
     if(await page.locator('.figure-grid img').count()!==12) throw new Error('Twelve contribution panels required');
@@ -28,8 +28,8 @@ const { pathToFileURL } = require('node:url');
       await page.evaluate(()=>scrollTo(0,0));
       await page.screenshot({path:path.join(__dirname,`qa/${width===1440?'desktop':'mobile'}-top.png`)});
       if(width===1440) {
-        await page.locator('#cat-owl .methods').screenshot({path:path.join(__dirname,'qa/cat-owl-methods.png')});
-        await page.locator('#cat-owl .color-study').screenshot({path:path.join(__dirname,'qa/cat-owl-color.png')});
+        await page.locator('#kiwi-lime .methods').screenshot({path:path.join(__dirname,'qa/kiwi-lime-methods.png')});
+        await page.locator('#kiwi-lime .color-study').screenshot({path:path.join(__dirname,'qa/kiwi-lime-color.png')});
         await page.locator('.figure-grid').screenshot({path:path.join(__dirname,'qa/contributions.png')});
       }
     }
