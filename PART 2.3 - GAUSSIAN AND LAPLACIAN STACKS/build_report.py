@@ -66,7 +66,7 @@ def build_report():
 <p class="formula">A<sub>i</sub> = M<sub>i</sub>L<sub>apple,i</sub><br>B<sub>i</sub> = (1 − M<sub>i</sub>)L<sub>orange,i</sub><br>C<sub>i</sub> = A<sub>i</sub> + B<sub>i</sub> &nbsp; · &nbsp; Oraple = Σ C<sub>i</sub></p>
 <p>Each RGB channel uses the same mask weights. The two weights already add to one, so I do not divide by two again. All layers have the same size, so I reconstruct the image by adding them directly.</p>
 <details><summary>Mask-weighted reconstruction</summary><pre><code>{blend_code}</code></pre></details></section>
-<section id="figure"><h2>03 / Figure 3.42, (a) through (l)</h2>
+<section id="figure"><h2>03 / Blending an Apple and an Orange</h2>
 <p>I follow the layout of Figure 3.42 using full-size stacks. It is not an exact copy of the textbook pyramid result. The first three rows show levels 0, 2 and 4. Each row shows the apple part, orange part and their sum. The last row adds all six levels, including the last broad layer, to show each source and the final blend.</p>
 <div class="figure-grid">{panels}</div>
 <p>Each of the first three rows uses one display scale, based on its largest absolute value. A zero area appears gray rather than black. The bottom row uses normal RGB display. I add the raw values before clipping. <a href="results/figure-3-42.png">Open the complete twelve-panel figure</a>.</p>
