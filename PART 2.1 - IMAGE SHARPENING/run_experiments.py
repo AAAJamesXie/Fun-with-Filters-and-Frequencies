@@ -65,7 +65,7 @@ def main():
               'clipping_unit': 'fraction of scalar RGB channel samples, not fraction of pixels',
               'versions': {'python': platform.python_version(), 'numpy': np.__version__, 'scipy': scipy.__version__,
                            'opencv': cv2.__version__, 'pillow': pillow_version}, 'images': {}}
-    for name, box in [('taj', [85, 15, 215, 205]), ('selfie', [155, 135, 345, 370])]:
+    for name, box in [('taj', [85, 15, 215, 205]), ('cats', [220, 245, 335, 370])]:
         path = HERE / f'input/{name}.jpg'
         image, original_size = load_rgb(path)
         selected = unsharp_mask(image, args.sigma, 1.)
@@ -99,17 +99,17 @@ def main():
                 sheet.paste(preview, (i * 220 + (220 - preview.width) // 2, 0))
             draw.text((i * 220 + 8, 292), f'alpha = {row["alpha"]:g}', fill='#111111')
         sheet.save(output / f'{name}-amount-contact.png')
-    reference = arrays['selfie_original']
+    reference = arrays['cats_original']
     degraded = filter_image(reference, gaussian_kernel(2.))
     arrays['restore_reference'] = reference
     arrays['restore_degraded'] = degraded
     save_rgb(reference, output / 'restore-reference.png')
     save_rgb(degraded, output / 'restore-degraded.png')
-    box = report['images']['selfie']['crop_xyxy']
+    box = report['images']['cats']['crop_xyxy']
     crop_preview(reference, box, output / 'restore-reference-crop.png')
     crop_preview(degraded, box, output / 'restore-degraded-crop.png')
     restore = {'degradation_sigma': 2., 'sharpen_sigma': args.sigma, 'selected_alpha': 2.,
-               'reference': 'The resized selfie is the sharp reference for artificial Gaussian degradation; not a claim of an optically perfect photograph.',
+               'reference': 'The resized cat photo is the reference for artificial Gaussian degradation; not a claim of an optically perfect photograph.',
                'degraded': evaluation(reference, degraded), 'amounts': []}
     for alpha in AMOUNTS:
         result = unsharp_mask(degraded, args.sigma, alpha)

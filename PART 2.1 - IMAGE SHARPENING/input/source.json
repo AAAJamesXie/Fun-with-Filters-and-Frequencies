@@ -4,11 +4,15 @@
     "original_file": "syde671 assn2 part 2 images/taj.jpg",
     "copied_without_modification": true
   },
-  "selfie": {
-    "source": "User-provided selfie previously approved for Part 1.1",
-    "original_file": "../PART 1.1 - CONVOLUTIONS FROM SCRATCH!/input/selfie.jpg",
-    "copied_without_modification": true
+  "preparation": "Taj retains its 300x300 size. The cat photo is resized proportionally to width 480 with Lanczos. EXIF orientation is applied before conversion to RGB float64 [0,1]. Supplied JPEG bytes are preserved in input/.",
+  "added_on": "2026-10-16",
+  "cats": {
+    "source": "User-provided cat photo selected for Part 2.1",
+    "original_file": "Photo 1.jpg",
+    "file": "cats.jpg",
+    "sha256": "0db7c742016783032d8344fb2ab5026bfc0c8bc392936132bdb366afe6d502d9",
+    "copied_without_modification": true,
+    "license": "User-provided photograph; no open-license grant asserted"
   },
-  "preparation": "Taj retains its 300x300 size. Selfie is resized proportionally to width 480 with Lanczos resampling. EXIF orientation is applied before conversion to RGB float64 [0,1]. Original JPEG bytes are preserved in input/.",
-  "added_on": "2026-10-16"
+  "updated_on": "2026-10-20"
 }

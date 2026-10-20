@@ -19,7 +19,7 @@ def build_report():
     observation = HERE / 'observations.txt'
     comments = observation.read_text(encoding='utf-8') if observation.exists() else 'Visual review pending.'
     examples = ''
-    for key, title in [('taj', 'The Taj Mahal'), ('selfie', 'An additional image: my selfie')]:
+    for key, title in [('taj', 'The Taj Mahal'), ('cats', 'An additional image: cats')]:
         record = m['images'][key]
         four = ''.join(figure(f'{key}-{suffix}.png', label) for suffix, label in [
             ('original', 'Original'), ('blurred', 'Gaussian low frequencies'),
@@ -59,17 +59,17 @@ def build_report():
 <p>In the detail pictures, gray means zero, brighter means positive and darker means negative. All use the same scale, ±0.25 per channel. Large values may be clipped in the pictures, but the raw files keep them. The original, blurred and sharpened pictures use their normal RGB colors.</p>
 {examples}<h3>Visual observations</h3><p>{escape(comments.strip())}</p></section>
 <section id="restore"><h2>03 / Can sharpening undo blur?</h2>
-<p>I use the resized selfie as the reference. I blur it with σ = 2, then sharpen it with σ = {m['sigma']:g}. I do not add noise. The reference is just the original input for this test. The result below uses α = {restoration['selected_alpha']:g}.</p>
+<p>I use the resized cat photo as the reference. I blur it with σ = 2, then sharpen it with σ = {m['sigma']:g}. I do not add noise. The reference is just the original input for this test. The result below uses α = {restoration['selected_alpha']:g}.</p>
 <div class="triple">{trio}</div><h3>Identical detail crops</h3><div class="triple">{detail}</div>
 <p>Compared with the reference, the blurred image has MSE {restoration['degraded']['display_mse_before_quantization']:.8f} and PSNR {restoration['degraded']['display_psnr_db_before_quantization']:.3f} dB. With α = {restored['alpha']:g}, MSE is {restored['display_mse_before_quantization']:.8f} and PSNR is {restored['display_psnr_db_before_quantization']:.3f} dB. I calculate these after clipping to 0–1 but before converting to 8-bit. Lower MSE and higher PSNR mean closer pixel values in this test. They do not always mean a better-looking image.</p>
 <table><thead><tr><th>Amount α</th><th>MSE</th><th>PSNR (dB)</th><th>Outside range</th></tr></thead><tbody>{rows}</tbody></table>
 <p>α = 0 is the blurred image without sharpening. The last column counts individual RGB values outside 0–1 before clipping, rather than whole pixels. The measurement file also keeps MSE before clipping. I show α = 2 as one example and list all tested amounts.</p>
-<p>The glasses and mouth look clearer after sharpening, but fine hair and face details are still softer than the reference. Sharpening increases the contrast that remains; it does not exactly undo the blur. Large amounts can also make noise, JPEG marks and bright/dark outlines stronger. Looking sharper is not the same as recovering the original detail.</p></section>
+<p>The eyes and face outline look clearer after sharpening, but fine fur details are still softer than the reference. Sharpening increases the contrast that remains; it does not exactly undo the blur. Large amounts can also make noise, JPEG marks and bright/dark outlines stronger. Looking sharper is not the same as recovering the original detail.</p></section>
 <section><h2>Verification and reproducibility</h2>
-<p>Six unit tests check that both methods agree, including at the borders. They also check α = 0, constant colors, separate RGB channels, signed detail, values outside 0–1, the filter sum and invalid inputs. I compare both methods at every amount on both photos and the blurred selfie.</p>
-<p>Taj Mahal is the course image. The other photo is my selfie from Part 1.1. I resize the selfie to width 480, keeping its shape and using Lanczos. The records include input hashes, sizes, sharpening amounts, clipped fractions and blur-test scores.</p>
+<p>Six unit tests check that both methods agree, including at the borders. They also check α = 0, constant colors, separate RGB channels, signed detail, values outside 0–1, the filter sum and invalid inputs. I compare both methods at every amount on both photos and the blurred cat photo.</p>
+<p>Taj Mahal is the course image. The additional cat photo is the photo I selected for this assignment. I resize it to width 480, keeping its shape and using Lanczos. I use the same photo for the blur test. The records include input hashes, sizes, sharpening amounts, clipped fractions and blur-test scores. <a href="input/cats.jpg">View the supplied cat photo</a>.</p>
 <p><a href="sharpen.py">Algorithm source</a> · <a href="run_experiments.py">Experiment source</a> · <a href="test_sharpen.py">Unit tests</a> · <a href="results/metrics.json">Measurements</a> · <a href="results/sharpen-arrays.npz">Raw arrays</a> · <a href="input/source.json">Input source record</a></p>
-<h3>What I learned</h3><p>I learned that sharpening makes edges stand out but does not fully restore a blurred image. A setting that works well on a building can make skin look too harsh. Keeping raw values separate from the pictures helps check the calculation.</p>
+<h3>What I learned</h3><p>I learned that sharpening makes edges stand out but does not fully restore a blurred image. A setting that works well on a building can make fur look too harsh. Keeping raw values separate from the pictures helps check the calculation.</p>
 <p class="versions">Python {m['versions']['python']} · NumPy {m['versions']['numpy']} · SciPy {m['versions']['scipy']} · OpenCV {m['versions']['opencv']} · Pillow {m['versions']['pillow']}</p></section>
 <footer class="site-footer"><a href="../index.html">Assignment overview</a><span>Part 2.1 · Image Sharpening</span></footer></main></body></html>'''
     (HERE / 'index.html').write_text(page, encoding='utf-8')
